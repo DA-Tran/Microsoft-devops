@@ -1,0 +1,20 @@
+def create_chess_board():
+    board = [
+        ["r", "n", "b", "q", "k", "b", "n", "r"],
+        ["p", "p", "p", "p", "p", "p", "p", "p"],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        [" ", " ", " ", " ", " ", " ", " ", " "],
+        ["P", "P", "P", "P", "P", "P", "P", "P"],
+        ["R", "N", "B", "Q", "K", "B", "N", "R"]
+    ]
+    return board
+
+def print_chess_board(board):
+    for row in board:
+        print(" ".join(row))
+
+if __name__ == "__main__":
+    chess_board = create_chess_board()
+    print_chess_board(chess_board)
